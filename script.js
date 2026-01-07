@@ -8,6 +8,17 @@ function increaseNumber() {
 
 }
 
+
+function decreaseButton(){
+    let currentNumber = parseInt(htmlNumberElement.textContent) - 1 ; 
+    htmlNumberElement.textContent = currentNumber;
+
+    if (htmlNumberElement.textContent < 0) {
+        htmlNumberElement.textContent = 0;
+    }
+}
+
+
 function resetButton() {
     htmlNumberElement.textContent = 0
 }
