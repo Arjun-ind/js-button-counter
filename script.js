@@ -1,4 +1,27 @@
-let htmlNumberElement = document.getElementById("numberElement"); 
+let htmlNumberElement = document.getElementById("numberElement");   
+
+let increaseButton = document.getElementById("increaseIcon"); 
+let decreaseButton = document.getElementById("decreaseIcon"); 
+let resetButton = document.getElementById("resetIcon");
+
+ 
+increaseButton.addEventListener("click",increaseNumber); 
+decreaseButton.addEventListener("click", decreaseNumber); 
+resetButton.addEventListener("click", resetNumber);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function increaseNumber() { 
@@ -9,7 +32,7 @@ function increaseNumber() {
 }
 
 
-function decreaseButton(){
+function decreaseNumber(){
     let currentNumber = parseInt(htmlNumberElement.textContent) - 1 ; 
     htmlNumberElement.textContent = currentNumber;
 
@@ -19,6 +42,6 @@ function decreaseButton(){
 }
 
 
-function resetButton() {
-    htmlNumberElement.textContent = 0
+function resetNumber() {
+    htmlNumberElement.textContent = 0;
 }
